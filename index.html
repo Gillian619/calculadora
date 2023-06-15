@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>Calculadora</title>
 </head>
+
 <body>
-    <header>
-        
-        
-    </header>
     <main>
-
+        <div>
+            <label for="">numero 1</label>
+            <input type="number" id="n1">
+        </div>
+        <div>
+            <label for="">Operação</label>
+            <input type="text" id="op">
+        </div>
+        <div>
+            <label for="">numero 2</label>
+            <input type="number" id="n2">
+        </div>
+        <div id="operadores">
+            <button onclick="troca1()">+</button>
+            <button onclick="troca2()">-</button>
+            <button onclick="troca3()">x</button>
+            <button onclick="troca4()">/</button>
+        </div>
+        <button onclick="Calcular()"> Calcular</button>
+        <h2 id="resul"></h2>
     </main>
-    <footer>
-
-    </footer>
 </body>
+
 </html>
